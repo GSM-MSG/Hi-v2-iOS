@@ -5,6 +5,7 @@ public extension TargetDependency {
 }
 
 public extension TargetDependency.SPM {
+    static let SnapKit = TargetDependency.external(name: "SnapKit")
     static let Swinject = TargetDependency.external(name: "Swinject")
 }
 
