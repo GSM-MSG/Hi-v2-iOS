@@ -1,4 +1,3 @@
-import Foundation
 import ProjectDescription
 
 public struct ProjectEnvironment {
@@ -10,9 +9,10 @@ public struct ProjectEnvironment {
 }
 
 public let env = ProjectEnvironment(
-    name: "",
-    organizationName: "",
+    name: "Hi-v2",
+    organizationName: "team.msg",
     deploymentTarget: .iOS(targetVersion: "16.0", devices: [.iphone, .ipad]),
     platform: .iOS,
     baseSetting: [:]
 )
+
