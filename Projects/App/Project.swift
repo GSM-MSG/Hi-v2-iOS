@@ -26,7 +26,13 @@ let targets: [Target] = [
         sources: ["Sources/**"],
         resources: ["Resources/**"],
         scripts: scripts,
-        dependencies: [],
+        dependencies: [
+            .domain(target: .AuthDomain),
+            .domain(target: .UserDomain),
+            .domain(target: .HomebaseDomain),
+            .domain(target: .ReservationDomain),
+            .domain(target: .NoticeDomain)
+        ],
         settings: .settings(base: env.baseSetting)
     )
 ]
